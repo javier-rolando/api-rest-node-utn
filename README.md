@@ -14,9 +14,9 @@ DB_NAME=*nombre a elección de la base de datos*
 TOKEN_SECRET=*una clave secreta a elección*
 ```
 
-### Cómo usar la API 🔧
+## Cómo usar la API 🔧
 
-## Registrar un usuario 🛠️
+### Registrar un usuario 🛠️
 
 _Para registrar un usuario se debe hacer una petición **POST** a http://localhost:3000/api/user/register_
 
@@ -43,7 +43,7 @@ _Respuesta:_
 
 ```
 
-## Login de usuario 🛠️
+### Login de usuario 🛠️
 
 _Para loguearse se debe hacer una petición **POST** a http://localhost:3000/api/user/login_
 _Esto dará el token, que está configurado para durar 3 horas._
@@ -70,7 +70,7 @@ _Respuesta:_
 
 ```
 
-## Ver todos los usuarios 🛠️
+### Ver todos los usuarios 🛠️
 
 _Para ver una lista de todos los usuarios registrados, hacer una petición **GET** a http://localhost:3000/api/user/all_
 
@@ -100,7 +100,7 @@ _Respuesta:_
 
 ```
 
-## Ver un usuario en específico 🛠️
+### Ver un usuario en específico 🛠️
 
 _Para ver un usuario, usar su ID para hacer una petición **GET** a http://localhost:3000/api/user/:id_
 
@@ -121,7 +121,7 @@ _Respuesta:_
 
 ```
 
-## Crear un post 🛠️
+### Crear un post 🛠️
 
 _Para crear un post se debe hacer una petición **POST** a http://localhost:3000/api/posts/create_
 _Es necesario tener el token recibido al loguearse y ponerlo en los Headers con el nombre de auth-token:_
@@ -154,7 +154,7 @@ _Respuesta:_
 
 ```
 
-## Actualizar un post 🛠️
+### Actualizar un post 🛠️
 
 _Para actualizar un post se debe hacer una petición **PUT** a http://localhost:3000/api/posts/:id/edit utilizando el ID del post creado._
 _Acá también es necesario usar el token para que la petición sea válida._
@@ -187,7 +187,7 @@ _Respuesta:_
 
 ```
 
-## Eliminar un post 🛠️
+### Eliminar un post 🛠️
 
 _Para eliminar un post se debe hacer una petición **DELETE** a http://localhost:3000/api/posts/:id/delete utilizando el ID del post a borrar._
 _Acá también es necesario usar el token para que la petición sea válida._
@@ -203,7 +203,7 @@ _Respuesta:_
 
 ```
 
-## Ver todos los posts 🛠️
+### Ver todos los posts 🛠️
 
 _Para ver una lista de todos los posts guardados, hacer una petición **GET** a http://localhost:3000/api/posts/all_
 _Cada post está relacionado con el ID del que creó dicho post y se puede ver en "author"._
@@ -244,7 +244,7 @@ _Respuesta:_
 
 ```
 
-## Ver un post en específico 🛠️
+### Ver un post en específico 🛠️
 
 _Para ver un post, usar su ID para hacer una petición **GET** a http://localhost:3000/api/posts/:id_
 _Acá también podemos ver dicha relación entre el ID del post y del usuario creador._
